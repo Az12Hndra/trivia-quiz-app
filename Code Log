@@ -1,3 +1,6 @@
 08/05/2026 : My code is finished, but somehow all of the answers are considered "incorrect" and the output of correct answer is just iterating
              all the answers. I notice that there's something wrong because the code can't identify which one is correct which one is incorrect.
              Also, I need to fix the output of correct answer so it can only print out the correct answer only.
+
+09/05/2026 : I fixed the code with the help of AI. Turns out line 62 where it was stated "answers, correct = ..." it should be "correct, asnwers = ....".
+             Now the code is working perfectly fine.
