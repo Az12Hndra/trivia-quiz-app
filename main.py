@@ -39,7 +39,7 @@ def display_question(question_data, number):
 def get_user_answer(answers):
     valid_choice = [str(i) for i in range(1, len(answers) + 1)]
     while True:
-        choice = input('\nYour answer (enter the number): ').strip().upper()
+        choice = input('\nYour answer (enter the number): ').strip()
         if choice in valid_choice:
             return int(choice)
         print('Invalid choice. Please enter a number corresponding to your answer.')
@@ -59,7 +59,7 @@ def play_quiz():
     score = 0
 
     for i, question_data in enumerate(questions, start=1):
-        answers, correct = display_question(question_data, i)
+        correct, answers = display_question(question_data, i)
         choice = get_user_answer(answers)
 
         selected_answer = answers[choice - 1]
